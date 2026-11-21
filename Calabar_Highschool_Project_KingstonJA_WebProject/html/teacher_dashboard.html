@@ -1,0 +1,121 @@
+<!--Web Project Calabar High school
+
+Group Members
+1)Name: Lescene Edwards #2504351
+2)Name: Nickaloy Ranglin #2409481
+3)Name: Stephawn Stimpson #2505180
+4)Name: Theo Wright #2505286
+Tutorial Class Time: Thursday 1pm-2:50pm
+Calabar High school adresss: 61 Red Hills Road, Kingston 20, Jamaica
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teacher grade entry and student report records for Calabar High School.">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="../css/C_Styles.css">
+    <link rel="icon" type="image/png" href="../assets/Calabar_High_School_Crest.png"> 
+    <script src="../javascript/logic.js" defer></script>   
+  </head>
+  <body>
+    <header class="banner">
+      <h1>Teacher Dashboard</h1>
+    </header>
+    <main class="teacher-dashboard">
+      <a class="teacher-brand">
+        <img src="../assets/Calabar_Logo.png" alt="" class="nav-logo">
+        <span>Calabar High School</span>
+      </a>
+      <div class="teacher-page-heading">
+          <h2>Students grade management</h2>
+          <p>Use the entry card to record a grade. Review grade information in the viewing card.</p>
+        </div>
+      <div class="teacher-dashboard-grid">
+        <section id="grade-entry" class="teacher-entry">
+          <div class="teacher-entry">
+            <span class="teacher-entry-kicker">Grade entry</span>
+            <h2>Enter a student grade</h2>
+            <p>Complete the student, subject, grade, and term fields.</p>
+          </div>
+          <form class="teacher-form" id="teacherform">
+            <div class="teacherfield">
+              <label for="studentid">Student ID</label>
+              <input type="text" id="studentid" name="studentid" required>
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select subject</option>
+                <option value="English">English</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+                <option value="Social studies">Social Studies</option>
+              </select>
+              <label for="grade">Grade</label>
+              <input type="text" id="grade" name="grade" required>
+              <label for="Term">Term</label>
+              <select id="Term" name="term" required>
+                <option value="">Select term</option>
+                <option value="term 1">Term 1</option>
+                <option value="term 2">Term 2</option>
+                <option value="term 3">Term 3</option>
+              </select>
+            </div>
+
+            <button type="submit">Submit grade <span aria-hidden="true">→</span></button>
+          </form>
+        </section>
+        <section id="grade-view" class="teacher-record">
+          <div class="teacher-card-heading">
+            <span class="teacher-record">Grade records</span>
+            <h2>View grade records</h2>
+            <p>Review the batch grade entry and student report card below.</p>
+          </div>
+          <div class="teacher-record">
+            <h3>Batch grade entry</h3>
+            <div class="teacher-record-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Student ID</th>
+                    <th scope="col">Student name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Term</th>
+                  </tr>
+                </thead>
+                <tbody id="gradetablebody"></tbody>
+              </table>
+            </div>
+          </div>
+          <section id="report" class="teacher-report">
+            <h3>Student report card</h3>
+            <dl class="report-details">
+              <div><dt>Student ID</dt><dd>—</dd></div>
+              <div><dt>Student name</dt><dd>—</dd></div>
+              <div><dt>Class</dt><dd>—</dd></div>
+              <div><dt>Term</dt><dd>—</dd></div>
+            </dl>
+            <div class="record-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade</th>
+                  </tr>
+                </thead>
+                  <tbody id="reportcardtablebody"></tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <span>&copy; Calabar High School</span>
+        <span>The Utmost for the Highest</span>
+      </div>
+    </footer>
+  </body>
+</html>

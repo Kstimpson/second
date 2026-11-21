@@ -1,0 +1,86 @@
+<!--Web Project Calabar High school
+
+Group Members
+1)Name: Lescene Edwards #2504351
+2)Name: Nickaloy Ranglin #2409481
+3)Name: Stephawn Stimpson #2505180
+4)Name: Theo Wright #2505286
+Tutorial Class Time: Thursday 1pm-2:50pm
+Calabar High school adresss: 61 Red Hills Road, Kingston 20, Jamaica
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Welcome to Calabar High School in Jamaica.">
+    <title>Calabar High School - Login</title>
+    <link rel="stylesheet" href="../css/C_Styles.css">
+    <link rel="icon" type="image/png" href="../assets/Calabar_High_School_Crest.png">
+    <script src="../javascript/logic.js" defer></script> 
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span>Calabar High School · 61 Red Hills Road · Kingston 2</span>
+        <span>The Utmost for the Highest</span>
+      </div>
+    </div>
+      <nav class="topnav">
+        <div class="nav-left">
+          <a class="logo-link" href="index.html">
+            <img src="../assets/Calabar_Logo.png" alt="Calabar High School Logo" class="nav-logo">
+            <span>Calabar High School</span>
+          </a>
+        </div>
+        <div class="nav-right">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="active" href="login.html">Login</a>
+        </div>
+      </nav>
+    <main class="login-page">
+      <section class="login-panel">
+        <h2>Welcome to Login Portal</h2>
+        <p>
+          This is Calabar’s main login screen. Sign in with your Calabar credentials,
+          select your account type, and click Login to continue.
+        </p>
+        <form class="loginform" id="loginform">
+          <div class="login-field">
+            <label for="userid">Enter ID#:</label>
+            <input type="text" id="userid" name="userid" required>
+          </div>
+          <div class="login-field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <fieldset class="account-options">
+            <legend>Select account type</legend>
+            <div class="account-options-list">
+              <span>
+                <input type="radio" id="Admin" name="role" value="admin" required>
+                <label for="Admin">Admin</label>
+              </span>
+              <span>
+                <input type="radio" id="Teacher" name="role" value="teacher" required>
+                <label for="Teacher">Teacher</label>
+              </span>
+              <span>
+                <input type="radio" id="Student" name="role" value="student" required>
+                <label for="Student">Student</label>
+              </span>
+            </div>
+          </fieldset>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <span>&copy; Calabar High School</span>
+        <span>The Utmost for the Highest</span>
+      </div>
+    </footer>
+  </body>
+</html>

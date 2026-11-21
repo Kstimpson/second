@@ -1,0 +1,78 @@
+<!--Web Project Calabar High school
+
+Group Members
+1)Name: Lescene Edwards #2504351
+2)Name: Nickaloy Ranglin #2409481
+3)Name: Stephawn Stimpson #2505180
+4)Name: Theo Wright #2505286
+Tutorial Class Time: Thursday 1pm-2:50pm
+Calabar High school adresss: 61 Red Hills Road, Kingston 20, Jamaica
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../css/C_Styles.css">
+    <link rel="icon" type="image/png" href="../assets/Calabar_High_School_Crest.png">
+    <script src="../javascript/logic.js" defer></script>  
+  </head>
+  <body>
+    <header class="banner">
+      <h1>Student Dashboard</h1>
+    </header>
+    <main>
+      <a class="teacher-brand">
+        <img src="../assets/Calabar_Logo.png" alt="" class="nav-logo">
+        <span>Calabar High School</span>
+      </a>
+      <h2>Student Information</h2>
+      <p>View academic details and financial students.</p>
+      <div>
+        <section class="Nav container">
+          <h3>Academic and Class Details</h3>
+          <div class="student-details">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Student name</th>
+                  <th scope="col">Class / year</th>
+                  <th scope="col">Subject</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Term</th>
+                </tr>
+              </thead>
+              <tbody id="studenttable"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="Nav container">
+          <h3>Financial Standing</h3>
+          <div class="student-financial">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Student name</th>
+                  <th scope="col">Total fee</th>
+                  <th scope="col">Amount paid</th>
+                  <th scope="col">Outstanding balance</th>
+                  <th scope="col">Payment status</th>
+                </tr>
+              </thead>
+              <tbody id="studentfeetable"></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <span>&copy; Calabar High School</span>
+        <span>The Utmost for the Highest</span>
+      </div>
+    </footer>
+  </body>
+</html>

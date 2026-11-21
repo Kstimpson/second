@@ -1,0 +1,189 @@
+<!--Web Project Calabar High school
+
+Group Members
+1)Name: Lescene Edwards #2504351
+2)Name: Nickaloy Ranglin #2409481
+3)Name: Stephawn Stimpson #2505180
+4)Name: Theo Wright #2505286
+Tutorial Class Time: Thursday 1pm-2:50pm
+Calabar High school adresss: 61 Red Hills Road, Kingston 20, Jamaica
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teacher grade entry and student report records for Calabar High School.">
+    <title>Student Registration | Admin</title>
+    <link rel="stylesheet" href="../css/C_Styles.css">
+    <link rel="icon" type="image/png" href="../assets/Calabar_High_School_Crest.png"> 
+    <script src="../javascript/logic.js" defer></script>  
+  </head>
+  <body>
+    <header class="banner">
+      <h1>Student Registration</h1>
+    </header>
+    <div class="Nav1">
+      <nav aria-label="Main navigation">
+        <a href="admin_dashboard.html" aria-current="page">Administrator</a>
+        <a href="register.html">Registration</a>
+        <a href="financial.html">Financial Ledger</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </div>
+    <main>
+      <a class="teacher-brand">
+        <img src="../assets/Calabar_Logo.png" alt="" class="nav-logo">
+        <span>Calabar High School</span>
+      </a>
+      <section class="Nav container">
+        <h3>Registration Form</h3>
+        <form id="studentform">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" required>
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" required>
+          <label for="age">Student Age</label>
+          <input type="number" id="age" name="age" min="1" required>
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <label for="studentclass">Student class</label>
+          <select id="studentclass" name="studentclass" required>
+            <option value="">Select grade</option>
+            <option value="grade7">Grade 7</option>
+            <option value="grade8">Grade 8</option>
+            <option value="grade9">Grade 9</option>
+            <option value="grade10">Grade 10</option>
+            <option value="grade11">Grade 11</option>
+          </select>
+          <button type="submit">Register student</button>
+        </form>
+      </section>
+      <section class="Nav container">
+        <h3>Update Student</h3>
+        <form id="updatestudentform">
+          <label for="updateStudentID">Student ID</label>
+          <input type="text" id="updateStudentID" required>
+          <label for="updatefirstname">First Name</label>
+          <input type="text" id="updatefirstname" required>
+          <label for="updatelastname">Last Name</label>
+          <input type="text" id="updatelastname" required>
+          <label for="updateAge">Student Age</label>
+          <input type="number" id="updateage" min="1" required>
+          <label for="updategender">Gender</label>
+          <select id="updategender" required>
+            <option value="">Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <label for="updateclass">Student Class</label>
+          <select id="updateclass" required>
+            <option value="">Select grade</option>
+            <option value="grade7">Grade 7</option>
+            <option value="grade8">Grade 8</option>
+            <option value="grade9">Grade 9</option>
+            <option value="grade10">Grade 10</option>
+            <option value="grade11">Grade 11</option>
+          </select>
+          <button type="submit">Update Student</button>
+        </form>
+      </section>
+      <section class="Nav container">
+        <h3>Remove Student</h3>
+        <form id="deletestudentform">
+          <label for="deletestudentid">Student ID</label>
+          <input type="text" id="deletestudentid" required>
+          <button type="submit">Remove Student</button>
+        </form>
+      </section>
+      <section class="Nav container">
+        <h3>Register Teacher</h3>
+        <form id="addteacherform">
+          <label for="teacherfirstname">First Name</label>
+          <input type="text" id="teacherfirstname" required>
+          <label for="teacherlastname">Last Name</label>
+          <input type="text" id="teacherlastname" required>
+          <label for="teachersubject">Subject</label>
+          <select id="teachersubject" name="subject" required>
+            <option value="">Select subject</option>
+            <option value="English">English</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="Social studies">Social Studies</option>
+          </select>
+          <button type="submit">Register Teacher</button>
+        </form>
+      </section>
+      <section class="Nav container">
+        <h3>Update Teacher</h3>
+        <form id="updateteacherform">
+          <label for="updateteacherid">Teacher ID</label>
+          <input type="text" id="updateteacherid" required>
+          <label for="updateteacherfirstname">First Name</label>
+          <input type="text" id="updateteacherfirstname" required>
+          <label for="updateteacherlastname">Last Name</label>
+          <input type="text" id="updateteacherlastname" required>
+          <label for="updateteachersubject">Subject</label>
+          <select id="updateteachersubject" name="subject" required>
+            <option value="">Select subject</option>
+            <option value="English">English</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Science">Science</option>
+            <option value="Social studies">Social Studies</option>
+          </select>
+          <button type="submit">Update Teacher</button>
+        </form>
+      </section>
+      <section class="Nav container">
+          <h3>Remove Teacher</h3>
+          <form id="deleteteacherform">
+            <label for="deleteteacherid">Teacher ID</label>
+            <input type="text" id="deleteteacherid" required>
+            <button type="submit">Remove Teacher</button>
+          </form>
+      </section>
+      <section class="Nav container">
+        <h3>Registered Students</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Student ID</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Class</th>
+              <th scope="col">Password</th>
+            </tr>
+          </thead>
+          <tbody id="students-reg-info"></tbody>
+        </table>
+      </section>
+      <section class="Nav container">
+        <h3>Registered Teachers</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Teacher ID</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Password</th>
+                </tr>
+            </thead>
+            <tbody id="teachers-reg-info"></tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <span>&copy; Calabar High School</span>
+        <span>The Utmost for the Highest</span>
+      </div>
+    </footer>
+  </body>
+</html>
